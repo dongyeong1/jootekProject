@@ -53,8 +53,10 @@
     top: 140px;
 }
 .text2 {
-    font-size: 1.4rem;
-    color: lightgray;
+    width: 500px;
+    font-size: 1.2rem;
+    color: gray;
+    font-weight: bold;
 }
 .text3 {
     position: relative;
@@ -124,9 +126,23 @@
     width: 100%;
     background-color: black;
     height: 300vh;
-    border-radius: 100px;
+    border-radius: 40px;
     color: white;
     margin-top: 50px;
+}
+.content1 {
+    height: 60vh;
+    /* margin-top: 30vh; */
+    color: white;
+    font-weight: bold;
+    font-size: 2.1rem;
+    width: 630px;
+    margin: 0 auto;
+    /* padding-bottom: 10vh; */
+    /* padding: 30vh 0; */
+    text-align: center;
+    opacity: 0;
+    transition: all 2s;
 }
 
 .displaywrapper {
@@ -157,8 +173,62 @@
 .footer {
     width: 100%;
     height: 40vh;
+    border-radius: 40px 40px 0 0;
     background-color: black;
 }
+.footercontent {
+    display: flex;
+    padding-top: 50px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+.footerlogo {
+    width: 10%;
+}
+.footerlogo img {
+    max-width: 100%;
+}
+.footercompany {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+.company {
+    margin-right: 80px;
+}
+.company div:first-child {
+    color: gray;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+.company div:nth-child(n + 2) {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 0;
+    height: 1px;
+    background: gray;
+}
+.companyaddressWrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 0.9rem;
+    padding-top: 20px;
+}
+.companyaddress {
+    width: 410px;
+}
+
 .display1-content {
     position: relative;
     top: 80px;
