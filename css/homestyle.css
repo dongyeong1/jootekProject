@@ -10,6 +10,10 @@
 }
 
 .container {
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: lightgray;
+
     width: 100%;
     height: 100vh;
 }
@@ -130,7 +134,7 @@
     position: relative;
     width: 100%;
     height: 250px;
-    background-color: lightgray;
+    background-color: #f2f4f6;
     /* border-color: gray; */
 }
 .menu {
@@ -165,8 +169,134 @@
 .rescontent {
     display: none;
 }
+.dropMenuWrapper {
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px 0 0 0;
+}
+.dropMenu {
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px 0 0 0;
+    /* visibility: hidden; */
+    visibility: hidden;
+    z-index: 100;
+    /* display: none; */
+}
 
 @media (min-width: 800px) {
+    .dropMenu4 {
+        width: 100%;
+        height: 20px;
+    }
+    .hovermenu:hover .dropMenu {
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 1px 0 0 0;
+        visibility: visible;
+        z-index: 100;
+    }
+    .dropMenuWrapper {
+        width: 100%;
+        background-color: white;
+    }
+    .dropMenu {
+        background-color: white;
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 80px;
+    }
+    .dropMenu1 {
+        width: 18.5%;
+    }
+    .dropMenu2 {
+        width: 57%;
+        display: flex;
+    }
+    .dropMenu3 {
+        width: 24.5%;
+    }
+    .dropMenu2Content1 {
+        width: 20%;
+        text-align: center;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 0 1px 0 1px;
+    }
+
+    .dropMenu2Content2 {
+        width: 20%;
+        text-align: center;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 0 1px 0 0;
+    }
+    .dropMenu2Content3 {
+        width: 20%;
+        text-align: center;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 0 1px 0 0;
+    }
+    .dropMenu2Content4 {
+        width: 20%;
+        text-align: center;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 0 1px 0 0;
+    }
+    .dropMenu2Content5 {
+        width: 20%;
+        text-align: center;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 0 1px 0 0;
+    }
+    .con1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .con1-1 {
+        text-align: left;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .con1-2 {
+        padding-top: 10px;
+        color: lightgray;
+        text-align: left;
+        font-size: 0.8rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .con1-1:hover {
+        cursor: pointer;
+        color: #31b85e;
+    }
+
+    .con2 {
+        margin-top: 20px;
+    }
+    .con3 {
+        margin-top: 20px;
+    }
+    .con4 {
+        margin-top: 20px;
+    }
+    .con5 {
+        margin-top: 20px;
+    }
+    /* .headermenu div:hover {
+        
+        visibility: visible;
+    } */
+    /* ///// */
+
     .headermenu a {
         cursor: pointer;
     }
@@ -198,6 +328,7 @@
         border-radius: 10px;
     }
     .headermenu {
+        height: 100%;
         position: relative;
         font-size: 1.1rem;
         padding: 15px 20px 20px 0;
@@ -205,6 +336,41 @@
         display: flex;
         justify-content: space-around;
     }
+    .headermenu div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .headermenu a {
+        /* display: flex; */
+        width: 100%;
+        /* justify-content: center; */
+        text-align: center;
+        /* vertical-align: middle; */
+    }
+    .headermenu div::after {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        width: 20%;
+        background-color: #31b85e;
+        transition: 0.3s ease-in-out;
+        transform: scaleX(0);
+    }
+    .headermenu div:hover::after {
+        transform: scaleX(1);
+    }
+
+    /* .underline {
+        position: absolute;
+        top: 78px;
+        display: block;
+        height: 2px;
+        width: 20%;
+        background-color: #31b85e;
+    } */
 
     .fa-bars {
         display: none;
@@ -248,7 +414,7 @@
 @media (min-width: 1000px) {
     .mainWrapper {
         height: 480px;
-        background-color: lightgray;
+        background-color: #f2f4f6;
         padding: 40px;
     }
     .main {
