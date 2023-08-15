@@ -1,0 +1,82 @@
+.box {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+    /* animation: asd 2s;
+    transform: translateX(0);
+    cursor: pointer;*/
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: translateX(100px);
+}
+
+@keyframes asd {
+    from {
+        /* transform: matrix(1, 0, 0, 1, 0, -16); */
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        /* transform: matrix(1, 0, 0, 1, 0, 0); */
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+.outbox {
+    background-color: blue;
+    display: block;
+    width: 300px;
+    position: relative;
+    aspect-ratio: 16 / 9;
+}
+.outbox .in_box {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-size: 100%;
+    /* background-color: red; */
+    background-position: center;
+    background-image: url("https://jootek.com/layouts/jootek_about/pages/about/images/main-card-image@2x.png");
+
+    /* padding-top: 50%; */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    border-radius: 30px;
+    padding-left: 20px;
+    height: 50px;
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: red;
+    border-radius: 30px;
+}
+.after::after {
+    content: "dong";
+    display: block;
+}

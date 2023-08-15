@@ -1,28 +1,13 @@
-// let dropmenu = document.querySelector(".dropMenu");
-// // let hovermeunu = document.querySelector(".hovermenu");
-// let menus = document.querySelectorAll(".headermenu");
-// menus.forEach((e) => {
-//     e.addEventListener("mouseover", (e) => horizontalIndicator(e));
-// });
-// // menus.forEach((e) => {
-// //     e.addEventListener("mouseout", (e) => out(e));
-// // });
-// dropmenu.forEach((e) => {
-//     e.addEventListener("mouseout", (e) => out(e));
-// });
+let hamburgerMenu = document.querySelector(".fa-bars");
+let cancelButton = document.querySelector(".cancel");
+let slideMenu = document.querySelector(".slidemenu");
 
-// function horizontalIndicator(e) {
-//     dropmenu.style.opacity = 1;
-//     // dropmenu.style.display = "block";
+hamburgerMenu.addEventListener("click", () => {});
+cancelButton.addEventListener("click", () => {
+    slideMenu.classList.remove("showmenu");
+});
 
-//     // underline.style.left = e.currentTarget.offsetLeft - 55 + "px";
-//     // // underline.style.width = e.currentTarget.offsetWidth + "px";
-//     // underline.style.width = 20 + "%";
-//     // underline.style.top = 78 + "px";
-// }
-
-// function out(e) {
-//     dropmenu.style.opacity = 0;
-
-//     // dropmenu.style.display = "none";
-// }
+function menushow() {
+    console.log("asdasdas");
+    slideMenu.classList.add("showmenu");
+}

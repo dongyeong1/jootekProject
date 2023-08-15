@@ -47,28 +47,37 @@
 }
 .homeimage img {
     max-width: 100%;
-    height: 400px;
+    height: 100%;
 }
 .homebox {
     width: 90%;
     height: calc(50vh - 60px);
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 .box1 {
     background-color: #4e4ecc;
-    margin: 20px 10px 10px 0;
+    /* margin: 10px; */
+    margin-bottom: 20px;
     border-radius: 15px;
     width: 50%;
+    height: 290px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    /* margin-bottom: 10px; */
 }
 .box2 {
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+
     background-color: #31b85e;
-    margin: 20px 0 10px 10px;
+    /* margin: 10px; */
     border-radius: 15px;
+    height: 290px;
 
     width: 50%;
     display: flex;
@@ -80,25 +89,25 @@
 }
 
 .content1 {
-    height: 40px;
+    height: 25px;
     font-weight: bold;
 
-    width: 50px;
+    width: 70px;
     border-radius: 5px;
     background-color: #ebfaf0;
     color: #4e4ecc;
     font-size: 0.8rem;
-    padding: 3px;
+    padding: 5px;
 }
 .greencontent1 {
-    height: 40px;
-    width: 50px;
+    height: 25px;
+    width: 70px;
     font-weight: bold;
     border-radius: 5px;
     background-color: #ebfaf0;
     color: #31b85e;
     font-size: 0.8rem;
-    padding: 3px;
+    padding: 5px;
 }
 .content2 {
     font-size: 1.2rem;
@@ -185,7 +194,42 @@
     display: none;
 }
 .fa-bars {
+    cursor: pointer;
     margin-right: 20px;
+}
+
+.footernav {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e8eb;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    /* background-color: red; */
+    bottom: 0;
+    font-size: 0.9rem;
+}
+.footernav div:hover {
+    cursor: pointer;
+    color: #31b85e;
+}
+
+.slidemenu {
+    background-color: #ffffff;
+    height: calc(100vh - 60px);
+    z-index: 200;
+    width: 300px;
+    position: absolute;
+    right: -300px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.showmenu {
+    right: 0px;
+    opacity: 1;
 }
 
 @media (min-width: 800px) {
@@ -422,6 +466,9 @@
 }
 
 @media (min-width: 1000px) {
+    .footernav {
+        display: none;
+    }
     .mainWrapper {
         height: 480px;
         background-color: #f2f4f6;
@@ -434,6 +481,7 @@
         margin: 0 auto;
     }
     .homeimage {
+        height: 400px;
         width: 75%;
     }
     .homeimage img {
@@ -452,6 +500,7 @@
     }
     .box2 {
         /* margin-left: 20px; */
+        height: 80px;
         width: 100%;
         padding: 0;
         margin: 20px 0 0 20px;
@@ -473,6 +522,7 @@
     }
     .box2 .boximage {
         width: 0%;
+        /* margin-top: 10px; */
     }
     .resimg {
         display: block;

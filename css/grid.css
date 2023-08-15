@@ -1,0 +1,27 @@
+div {
+    background-color: red;
+    /* width: 25%; */
+    height: 100px;
+    display: inline-block;
+}
+.boxWrapper {
+    display: grid;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* @media (max-width: 800px) {
+    div {
+        background-color: blue;
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    div {
+        background-color: green;
+        width: 100%;
+    }
+} */
